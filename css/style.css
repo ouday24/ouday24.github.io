@@ -1,13 +1,6 @@
 /* Style pour la section d'accueil avec image de fond */
 .home {
-    background-image: url('https://github.com/ouday24/ouday24.github.io/raw/main/couché-lune-fond.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    color: #fff;
-    display: flex;/* Style pour la section d'accueil avec image de fond */
-.home {
-    background-image: url('../images/couché-lune-fond.jpg'); /* Utilise le chemin relatif si l'image est dans le dossier `images` */
+    background-image: url('https://github.com/ouday24/ouday24.github.io/raw/main/images/couché-lune-fond.jpg'); /* Lien direct de GitHub */
     background-size: cover;
     background-position: center;
     height: 100vh;
