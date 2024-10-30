@@ -9,7 +9,7 @@ body {
 
 /* Style pour la section d'accueil avec image de fond */
 .home {
-    background-image: url('images/image lune.jpg'); /* Vérifiez le nom exact du fichier */
+    background-image: url('images/lune.jpg'); /* Assurez-vous que le nom du fichier est bien 'lune.jpg' */
     background-size: cover; /* Adapte l’image pour couvrir toute la section */
     background-position: center; /* Centre l’image */
     background-repeat: no-repeat; /* Empêche la répétition de l'image */
