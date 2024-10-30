@@ -16,10 +16,8 @@
     align-items: center;
 }
 
-/* Taille des icônes dans les titres de section */
 .section-title .section-icon {
-    width: 20px; /* Taille réduite pour les icônes dans les titres */
-    height: 20px;
-    margin-right: 8px; /* Espacement entre l'icône et le texte */
-    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
 }
