@@ -9,69 +9,49 @@ body {
 
 /* Style pour la section d'accueil avec image de fond */
 .home {
-    background-image: url('images/lune.jpg'); /* Assurez-vous que le nom du fichier est bien 'lune.jpg' */
+    background-image: url('../images/image lune.jpg'); /* Assurez-vous que l'image est bien nommée "image lune.jpg" */
     background-size: cover; /* Adapte l’image pour couvrir toute la section */
     background-position: center; /* Centre l’image */
     background-repeat: no-repeat; /* Empêche la répétition de l'image */
-    height: 100vh;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
+    height: 100vh; /* Hauteur de la section */
+    color: #fff; /* Couleur du texte en blanc */
+    display: flex; /* Pour centrer le contenu */
+    flex-direction: column; /* Organisation verticale du contenu */
+    align-items: center; /* Centrage horizontal du contenu */
+    justify-content: center; /* Centrage vertical du contenu */
+    text-align: center; /* Centrage du texte */
+    padding: 20px; /* Espace autour du contenu */
 }
 
-/* Style pour les titres des sections avec icônes */
+/* Style pour les titres des sections */
 .section-title {
-    display: flex;
-    align-items: center;
-    font-size: 1.8em;
+    font-size: 2em;
     color: #0073e6;
-    margin-bottom: 20px;
-    border-bottom: 3px solid #0073e6;
+    margin: 20px 0;
+    text-align: center;
+    border-bottom: 2px solid #0073e6;
     padding-bottom: 10px;
     transition: color 0.3s;
-    position: relative;
-}
-
-.section-title::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 3px;
-    background: #ff6600;
-    left: 0;
-    bottom: -5px;
-    transition: width 0.3s ease;
-}
-
-.section-title:hover::after {
-    width: 100%;
-}
-
-.section-title i {
-    margin-right: 10px;
-    color: #0073e6;
-    transition: transform 0.3s, color 0.3s;
 }
 
 .section-title:hover {
-    color: #ff6600;
+    color: #ff6600; /* Changement de couleur au survol */
 }
 
-.section-title:hover i {
-    color: #ff6600;
-    transform: scale(1.2);
+/* Style des sous-sections */
+#career, #sports, #linkedin, #cv {
+    padding: 20px;
+    margin: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Style des sous-titres pour Sports & Hobbies avec effet de survol */
+/* Style des sous-titres pour les sections Sports & Hobbies */
 #sports h3 {
     font-size: 1.5em;
     margin-top: 20px;
     color: #333;
-    position: relative;
     transition: color 0.3s ease, transform 0.3s ease;
     cursor: pointer;
 }
@@ -79,6 +59,17 @@ body {
 #sports h3:hover {
     color: #0073e6;
     transform: scale(1.1);
+}
+
+/* Style des liens */
+a {
+    color: #0073e6;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff6600; /* Change la couleur du lien au survol */
 }
 
 /* Style du footer */
