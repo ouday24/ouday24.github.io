@@ -73,7 +73,7 @@ section {
     align-items: center;
 }
 
-.section-title .section-icon {
+.section-title .section-icon 
     width: 20px;
     height: 20px;
     margin-right: 10px;
