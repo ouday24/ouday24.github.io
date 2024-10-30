@@ -9,12 +9,12 @@ body {
 
 /* Style pour la section d'accueil avec image de fond */
 .home {
-    background-image: url('../images/image-lune.jpg'); /* Assurez-vous que l'image est bien nommée "image-lune.jpg" */
+    background-image: url('../images/image-lune.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
-    color: #1a1a1a; /* Couleur plus foncée pour le texte dans .home */
+    color: #1a1a1a;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,21 +25,21 @@ body {
 
 /* Style pour le titre principal */
 .home h1 {
-    font-size: 3em; /* Augmente la taille du titre */
-    font-weight: 700; /* Utilise la version bold d'Open Sans */
-    color: #111; /* Couleur encore plus foncée pour le titre */
+    font-size: 3em;
+    font-weight: 700;
+    color: #111;
     margin: 0;
 }
 
 /* Style pour le sous-titre */
 .home p {
-    font-size: 1.5em; /* Augmente la taille du sous-titre */
+    font-size: 1.5em;
     font-weight: 400;
-    color: #333; /* Couleur foncée pour le sous-titre */
+    color: #333;
     margin-top: 10px;
 }
 
-/* Style pour les titres des sections */
+/* Style pour les titres avec icônes */
 .section-title {
     font-size: 2em;
     color: #0073e6;
@@ -47,15 +47,20 @@ body {
     text-align: center;
     border-bottom: 2px solid #0073e6;
     padding-bottom: 10px;
-    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.section-title:hover {
-    color: #ff6600; /* Changement de couleur au survol */
+/* Style pour les icônes de section */
+.section-title .section-icon {
+    width: 30px; /* Taille de l'icône */
+    height: 30px;
+    margin-right: 10px; /* Espacement entre l'icône et le texte */
 }
 
 /* Style des sous-sections */
-#career, #sports, #linkedin, #cv {
+#career, #electronic-projects, #software-projects, #sports, #contact {
     padding: 20px;
     margin: 20px;
     background: #f9f9f9;
@@ -63,27 +68,20 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Style des sous-titres pour les sections Sports & Hobbies */
-#sports h3 {
-    font-size: 1.5em;
-    margin-top: 20px;
-    color: #333;
-    transition: color 0.3s ease, transform 0.3s ease;
-    cursor: pointer;
-}
-
-#sports h3:hover {
-    color: #0073e6;
-    transform: scale(1.1);
-}
-
-/* Style des liens */
-a {
+/* Style des liens avec icônes dans la section Contact */
+#contact a {
+    font-size: 1.2em;
+    display: inline-flex;
+    align-items: center;
     color: #0073e6;
     text-decoration: none;
-    transition: color 0.3s ease;
+    margin-bottom: 10px;
 }
 
-a:hover {
-    color: #ff6600; /* Change la couleur du lien au survol */
+#contact a i {
+    margin-right: 8px;
+}
+
+#contact a:hover {
+    color: #ff6600;
 }
