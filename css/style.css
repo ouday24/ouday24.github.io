@@ -10,18 +10,14 @@ body {
 /* Style pour la section d'accueil avec image de fond */
 .home {
     background-image: url('https://github.com/ouday24/ouday24.github.io/raw/main/images/couché-lune-fond.jpg');
-    background-size: contain; /* Utilisation de 'contain' pour ajuster le zoom */
-    background-repeat: no-repeat; /* Évite la répétition de l'image */
-    background-position: center center; /* Centre l'image au milieu */
-    background-attachment: scroll; /* L'image défile avec la page */
+    background-size: cover;
+    background-position: center;
     height: 100vh;
     color: #fff;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 20px;
 }
 
 /* Style pour les titres des sections avec icônes */
