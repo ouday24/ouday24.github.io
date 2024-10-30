@@ -1,28 +1,28 @@
-/* Barre de navigation */
-.top-nav {
+/* Pavé de navigation centré */
+.icon-box {
     position: fixed;
-    top: 0;
-    width: 100%;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: rgba(211, 211, 211, 0.85); /* Gris clair transparent */
-    padding: 10px 0;
-    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    gap: 15px;
 }
 
-.top-nav a {
+.icon-box a {
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-.top-nav a:hover {
+.icon-box a:hover {
     transform: scale(1.2);
     opacity: 0.8;
 }
 
 .nav-icon {
-    width: 30px; /* Ajustez la taille de l'icône */
-    height: 30px;
+    width: 25px;
+    height: 25px;
 }
 
 /* Style pour la section d'accueil avec image de fond */
@@ -37,6 +37,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-top: 60px; /* Espace pour la barre de navigation */
 }
 
 /* Style pour les titres de section */
@@ -58,7 +59,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
-    padding-top: 60px; /* Espace pour la barre de navigation */
     background-color: #f4f4f9;
     color: #333;
 }
