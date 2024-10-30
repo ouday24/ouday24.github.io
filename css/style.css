@@ -1,25 +1,42 @@
-/* Appliquer la police Roboto à tout le site */
+/* Appliquer la police Open Sans */
 body {
-    font-family: 'Roboto', sans-serif;
-    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    color: #333; /* Couleur du texte par défaut */
     background-color: #f3f4f6;
     margin: 0;
     padding: 0;
 }
 
+/* Style pour la section d'accueil avec image de fond */
 .home {
-    background-image: url('../images/image-lune.jpg'); /* Chemin relatif vers l'image */
+    background-image: url('../images/image-lune.jpg'); /* Assurez-vous que l'image est bien nommée "image-lune.jpg" */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
-    color: #fff;
+    color: #1a1a1a; /* Couleur plus foncée pour le texte dans .home */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding: 20px;
+}
+
+/* Style pour le titre principal */
+.home h1 {
+    font-size: 3em; /* Augmente la taille du titre */
+    font-weight: 700; /* Utilise la version bold d'Open Sans */
+    color: #111; /* Couleur encore plus foncée pour le titre */
+    margin: 0;
+}
+
+/* Style pour le sous-titre */
+.home p {
+    font-size: 1.5em; /* Augmente la taille du sous-titre */
+    font-weight: 400;
+    color: #333; /* Couleur foncée pour le sous-titre */
+    margin-top: 10px;
 }
 
 /* Style pour les titres des sections */
@@ -42,4 +59,31 @@ body {
     padding: 20px;
     margin: 20px;
     background: #f9f9f9;
-   
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style des sous-titres pour les sections Sports & Hobbies */
+#sports h3 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #333;
+    transition: color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+#sports h3:hover {
+    color: #0073e6;
+    transform: scale(1.1);
+}
+
+/* Style des liens */
+a {
+    color: #0073e6;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff6600; /* Change la couleur du lien au survol */
+}
