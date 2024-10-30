@@ -7,20 +7,19 @@ body {
     padding: 0;
 }
 
-/* Style pour la section d'accueil avec image de fond */
 .home {
-    background-image: url('../images/image-lune.jpg'); /* Assurez-vous que l'image est bien nommée "image-lune.jpg" */
-    background-size: cover; /* Adapte l’image pour couvrir toute la section */
-    background-position: center; /* Centre l’image */
-    background-repeat: no-repeat; /* Empêche la répétition de l'image */
-    height: 100vh; /* Hauteur de la section */
-    color: #fff; /* Couleur du texte en blanc */
-    display: flex; /* Pour centrer le contenu */
-    flex-direction: column; /* Organisation verticale du contenu */
-    align-items: center; /* Centrage horizontal du contenu */
-    justify-content: center; /* Centrage vertical du contenu */
-    text-align: center; /* Centrage du texte */
-    padding: 20px; /* Espace autour du contenu */
+    background-image: url('../images/image-lune.jpg'); /* Chemin relatif vers l'image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
 }
 
 /* Style pour les titres des sections */
