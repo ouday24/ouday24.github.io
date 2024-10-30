@@ -9,10 +9,10 @@ body {
 
 /* Style pour la section d'accueil avec image de fond */
 .home {
-    background-image: url('https://github.com/ouday24/ouday24.github.io/raw/main/images/couché-lune-fond.jpg');
-    background-size: 150% auto; /* Ajuste l'image à 150% de la largeur pour un dézoom */
+    background-image: url('images/image lune.jpg'); /* Chemin vers l'image "image lune.jpg" */
+    background-size: cover; /* Adapte l’image pour couvrir toute la section */
+    background-position: center; /* Centre l’image */
     background-repeat: no-repeat; /* Empêche la répétition de l'image */
-    background-position: center; /* Centre l'image */
     height: 100vh;
     color: #fff;
     display: flex;
@@ -33,6 +33,22 @@ body {
     border-bottom: 3px solid #0073e6;
     padding-bottom: 10px;
     transition: color 0.3s;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: #ff6600;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease;
+}
+
+.section-title:hover::after {
+    width: 100%;
 }
 
 .section-title i {
@@ -48,6 +64,21 @@ body {
 .section-title:hover i {
     color: #ff6600;
     transform: scale(1.2);
+}
+
+/* Style des sous-titres pour Sports & Hobbies avec effet de survol */
+#sports h3 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #333;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+#sports h3:hover {
+    color: #0073e6;
+    transform: scale(1.1);
 }
 
 /* Style du footer */
