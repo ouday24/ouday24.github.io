@@ -1,7 +1,17 @@
+/* Appliquer la police Roboto à tout le site */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 0;
+}
+
 /* Style pour la section d'accueil avec image de fond */
 .home {
-    background-image: url('https://github.com/ouday24/ouday24.github.io/raw/main/images/couché-lune-fond.jpg'); /* Lien direct de GitHub */
-    background-size: cover;
+    background-image: url('https://github.com/ouday24/ouday24.github.io/raw/main/images/couché-lune-fond.jpg'); /* Lien direct vers l'image */
+    background-size: cover; /* Ajuste l'image pour couvrir toute la zone */
+    background-attachment: fixed; /* Garde l'image fixe au défilement */
     background-position: center;
     height: 100vh;
     color: #fff;
@@ -10,17 +20,10 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 20px;
 }
 
-/* Styles généraux */
-body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    background-color: #f3f4f6;
-    margin: 0;
-    padding: 0;
-}
-
+/* Style pour les titres des sections avec icônes */
 .section-title {
     display: flex;
     align-items: center;
@@ -47,58 +50,7 @@ body {
     transform: scale(1.2);
 }
 
-footer {
-    background-color: rgba(0, 0, 0, 0.85);
-    color: #fff;
-    text-align: center;
-    padding: 15px;
-    font-size: 0.9em;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-/* Styles généraux */
-body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    background-color: #f3f4f6;
-    margin: 0;
-    padding: 0;
-}
-
-.section-title {
-    display: flex;
-    align-items: center;
-    font-size: 1.8em;
-    color: #0073e6;
-    margin-bottom: 20px;
-    border-bottom: 3px solid #0073e6;
-    padding-bottom: 10px;
-    transition: color 0.3s;
-}
-
-.section-title i {
-    margin-right: 10px;
-    color: #0073e6;
-    transition: transform 0.3s, color 0.3s;
-}
-
-.section-title:hover {
-    color: #ff6600;
-}
-
-.section-title:hover i {
-    color: #ff6600;
-    transform: scale(1.2);
-}
-
+/* Style du footer */
 footer {
     background-color: rgba(0, 0, 0, 0.85);
     color: #fff;
