@@ -3,27 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ouday Haidara Portfolio</title>
+    <title>Portfolio - Ouday Haidara</title>
+    <!-- Lien vers le fichier CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap">
+    <!-- Importer Open Sans depuis Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Pavé de navigation fixe et centré avec effets de survol -->
-    <div class="icon-box">
-        <a href="#career"><img src="images/businessman.png" alt="Career Icon" class="nav-icon"></a>
-        <a href="#electronic-projects"><img src="images/circuit.png" alt="Electronic Projects Icon" class="nav-icon"></a>
-        <a href="#software-projects"><img src="images/programing.png" alt="Software Projects Icon" class="nav-icon"></a>
-        <a href="#sports"><img src="images/football.png" alt="Sports Icon" class="nav-icon"></a>
-        <a href="#contact"><img src="images/resume.png" alt="Resume Icon" class="nav-icon"></a>
-    </div>
+    <!-- Barre de navigation fixe avec icônes -->
+    <nav class="icon-nav">
+        <a href="#career" class="nav-icon" title="Professional Career">
+            <img src="images/businessman.png" alt="Professional Career Icon">
+        </a>
+        <a href="#electronic-projects" class="nav-icon" title="Electronic Projects">
+            <img src="images/circuit.png" alt="Electronic Projects Icon">
+        </a>
+        <a href="#software-projects" class="nav-icon" title="Software Projects">
+            <img src="images/programing.png" alt="Software Projects Icon">
+        </a>
+        <a href="#sports" class="nav-icon" title="Sports and Hobbies">
+            <img src="images/football.png" alt="Sports and Hobbies Icon">
+        </a>
+        <a href="#contact" class="nav-icon" title="Contact (LinkedIn & CV)">
+            <img src="images/resume.png" alt="Contact Icon">
+        </a>
+    </nav>
 
-    <!-- Section d'accueil -->
-    <header class="home">
+    <!-- Section d'accueil avec image de fond -->
+    <section class="home">
         <h1>Ouday Haidara</h1>
         <p>Apprentice Engineer in Embedded Electrical and Electronic Systems</p>
-    </header>
+    </section>
 
-    <!-- Sections du contenu -->
+    <!-- Section Professional Career -->
     <section id="career">
         <h2 class="section-title">
             <img src="images/businessman.png" alt="Professional Career Icon" class="section-icon"> Professional Career
@@ -37,29 +49,23 @@
         <p><strong>Since October 2023:</strong> Apprentice Electronics Engineer, ITEST, Balma-Gramont.</p>
     </section>
 
+    <!-- Section Electronic Projects -->
     <section id="electronic-projects">
         <h2 class="section-title">
             <img src="images/circuit.png" alt="Electronic Projects Icon" class="section-icon"> Electronic Projects (at CESI)
         </h2>
         <p>Projects focusing on hardware and software integration with microcontrollers, sensor data collection, and circuit design.</p>
-        
-        <h3>Project Examples</h3>
-        <p><strong>Weather Station:</strong> Developed a station using Arduino to measure temperature, humidity, and other environmental data.</p>
-        <p><strong>Portable Bluetooth Speaker:</strong> Designed and built a waterproof speaker with custom circuitry and Bluetooth connectivity.</p>
     </section>
 
+    <!-- Section Software Projects -->
     <section id="software-projects">
         <h2 class="section-title">
             <img src="images/programing.png" alt="Software Projects Icon" class="section-icon"> Software Projects (at CESI)
         </h2>
         <p>Various projects involving Python, MySQL, and web development to build databases, process data, and create applications.</p>
-
-        <h3>Project Examples</h3>
-        <p><strong>Data Analysis with Python:</strong> Analyzed large datasets for insights using Pandas and Matplotlib libraries.</p>
-        <p><strong>MySQL Database Creation:</strong> Built a structured database from scratch to organize and visualize complex data.</p>
-        <p><strong>Personal Website:</strong> Created a website using HTML and CSS, hosted on GitHub Pages.</p>
     </section>
 
+    <!-- Section Sports & Hobbies -->
     <section id="sports">
         <h2 class="section-title">
             <img src="images/football.png" alt="Sports and Hobbies Icon" class="section-icon"> Sports & Hobbies
@@ -79,6 +85,7 @@
         <p>Enjoy long-distance cycling, both for fitness and leisure, exploring different regions on two wheels.</p>
     </section>
 
+    <!-- Section LinkedIn et CV -->
     <section id="contact">
         <h2 class="section-title">
             <img src="images/resume.png" alt="CV and LinkedIn Icon" class="section-icon"> Contact
@@ -86,5 +93,6 @@
         <p><a href="https://www.linkedin.com/in/ouday-haidara-7b6105258/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></p>
         <p><a href="Resume of Ouday HAIDARA.pdf" target="_blank"><i class="fas fa-file-alt"></i> Download my CV (English)</a></p>
     </section>
+
 </body>
 </html>
