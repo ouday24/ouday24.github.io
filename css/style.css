@@ -12,7 +12,7 @@ body {
     display: flex;
     justify-content: center;
     padding: 10px;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(173, 216, 230, 0.9); /* bleu pale */
     position: fixed;
     top: 0;
     width: 100%;
@@ -26,8 +26,8 @@ body {
 }
 
 .top-nav a img {
-    width: 25px;
-    height: 25px;
+    width: 30px; /* Taille des icônes plus grande */
+    height: 30px;
 }
 
 .top-nav a:hover {
@@ -73,9 +73,9 @@ section {
     align-items: center;
 }
 
-.section-title .section-icon 
-    width: 20px;
-    height: 20px;
+.section-title .section-icon {
+    width: 25px;
+    height: 25px;
     margin-right: 10px;
     vertical-align: middle;
 }
