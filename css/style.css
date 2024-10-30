@@ -1,66 +1,23 @@
-/* Style pour la barre d'icônes */
-.icon-bar {
-    position: fixed;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 15px;
-    background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
-    padding: 10px;
-    border-radius: 8px;
-    z-index: 10; /* Toujours visible */
-}
-
-/* Style pour chaque icône dans la barre */
-.icon-bar .nav-icon {
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-    transition: transform 0.2s ease, filter 0.2s ease;
-}
-
-/* Effet de survol pour les icônes */
-.icon-bar .nav-icon:hover {
-    transform: scale(1.2); /* Agrandissement */
-    filter: brightness(1.2); /* Augmente la luminosité */
-}
-
-/* Autres styles pour le corps et la section accueil */
-body {
-    font-family: 'Open Sans', sans-serif;
-    color: #333; /* Couleur du texte par défaut */
-    background-color: #f3f4f6;
-    margin: 0;
-    padding: 0;
-}
-
-.home {
-    background-image: url('../images/image-lune.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    color: #1a1a1a;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+/* Style des sections */
+#career, #electronic-projects, #software-projects, #sports, #contact {
     padding: 20px;
+    margin: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Style pour le titre principal */
-.home h1 {
-    font-size: 3em;
-    font-weight: 700;
-    color: #111;
-    margin: 0;
+/* Style des titres de section avec icônes */
+.section-title {
+    font-size: 2em;
+    color: #0073e6;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
 }
 
-/* Style pour le sous-titre */
-.home p {
-    font-size: 1.5em;
-    font-weight: 400;
-    color: #333;
-    margin-top: 10px;
+.section-title .section-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
 }
