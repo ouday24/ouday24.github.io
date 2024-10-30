@@ -7,12 +7,13 @@ body {
     color: #333;
 }
 
-/* Navigation en haut */
+/* Navigation en pavé pour les icônes */
 .top-nav {
     display: flex;
     justify-content: center;
-    padding: 10px;
-    background: rgba(173, 216, 230, 0.9); /* bleu pale */
+    gap: 10px;
+    padding: 15px;
+    background: none;
     position: fixed;
     top: 0;
     width: 100%;
@@ -20,18 +21,22 @@ body {
 }
 
 .top-nav a {
-    margin: 0 10px;
-    opacity: 0.8;
-    transition: opacity 0.3s;
-}
-
-.top-nav a img {
-    width: 30px; /* Taille des icônes plus grande */
-    height: 30px;
+    display: inline-block;
+    padding: 8px;
+    background: linear-gradient(135deg, #add8e6, #d3d3d3); /* Dégradé bleu clair et gris */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .top-nav a:hover {
-    opacity: 1;
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.top-nav a img {
+    width: 24px; /* Taille ajustée des icônes */
+    height: 24px;
 }
 
 /* Section accueil */
