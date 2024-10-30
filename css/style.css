@@ -1,23 +1,89 @@
-/* Style des sections */
+/* Font and Basic Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Navigation en haut */
+.top-nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.top-nav a {
+    margin: 0 10px;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.top-nav a img {
+    width: 25px;
+    height: 25px;
+}
+
+.top-nav a:hover {
+    opacity: 1;
+}
+
+/* Section accueil */
+.home {
+    background-image: url('../images/image-lune.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.home h1 {
+    font-size: 3em;
+    font-weight: 700;
+    color: #000;
+}
+
+.home p {
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #333;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 20px;
+    margin-top: 20px;
+}
+
+.section-title {
+    font-size: 2em;
+    color: #0073e6;
+    display: flex;
+    align-items: center;
+}
+
+.section-title .section-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
 #career, #electronic-projects, #software-projects, #sports, #contact {
     padding: 20px;
     margin: 20px;
     background: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Style des titres de section avec icônes */
-.section-title {
-    font-size: 2em;
-    color: #0073e6;
-    margin: 20px 0;
-    display: flex;
-    align-items: center;
-}
-
-.section-title .section-icon {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
 }
