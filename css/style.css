@@ -7,6 +7,44 @@ body {
     padding: 0;
 }
 
+/* Style pour le menu d'icônes en haut de la page */
+.icon-menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* Style des liens d'icônes */
+.icon-link {
+    margin: 0 15px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.icon-link img {
+    width: 24px;
+    height: 24px;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: filter 0.3s, opacity 0.3s;
+}
+
+/* Effet au survol */
+.icon-link:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.icon-link:hover img {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
 /* Style pour la section d'accueil avec image de fond */
 .home {
     background-image: url('../images/image-lune.jpg');
