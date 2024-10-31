@@ -23,6 +23,74 @@ body {
     transition: top 0.5s ease; /* Transition de descente */
     z-index: 1000;
 }
+/* Style de la section Professional Career */
+#professional-career {
+    text-align: center;
+    padding: 50px 0;
+}
+
+/* Conteneur de cartes */
+.career-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Style de chaque carte */
+.career-card {
+    position: relative;
+    width: 250px;
+    height: 200px;
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.career-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Image de fond */
+.card-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.6);
+    transition: filter 0.3s ease;
+}
+
+.career-card:hover .card-image {
+    filter: brightness(0.8);
+}
+
+/* Contenu de la carte */
+.card-content {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.card-content h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+.card-content p {
+    font-size: 0.9em;
+    color: #e0e0e0;
+    margin-top: 5px;
+}
 
 /* Classe pour afficher le rectangle */
 .icon-bar.visible {
