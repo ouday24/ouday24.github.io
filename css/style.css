@@ -10,17 +10,19 @@ body {
 /* Style pour le rectangle fixe en haut de l'écran */
 .icon-bar {
     position: fixed;
-    top: 20px; /* Décalage du haut de l'écran */
+    top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgba(200, 200, 200, 0.6); /* Couleur gris transparent */
+    background-color: rgba(200, 200, 200, 0.6);
     padding: 10px 20px;
-    border-radius: 20px; /* Angles arrondis */
+    width: fit-content; /* Ajuste la taille du rectangle autour des icônes */
+    border-radius: 20px;
     display: flex;
-    gap: 15px; /* Espace entre les icônes */
+    gap: 15px;
     z-index: 1000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 
 /* Style des liens d'icônes */
 .icon-link img {
