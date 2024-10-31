@@ -10,15 +10,14 @@ body {
 /* Style pour le rectangle fixe en haut de l'écran */
 .icon-bar {
     position: fixed;
-    top: 20px;
+    top: 20px; /* Décalage du haut de l'écran */
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgba(200, 200, 200, 0.6);
+    background-color: rgba(200, 200, 200, 0.6); /* Couleur gris transparent */
     padding: 10px 20px;
-    width: fit-content; /* Ajuste la taille du rectangle autour des icônes */
-    border-radius: 20px;
+    border-radius: 20px; /* Angles arrondis */
     display: flex;
-    gap: 15px;
+    gap: 15px; /* Espace entre les icônes */
     z-index: 1000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
