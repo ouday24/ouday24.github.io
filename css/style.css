@@ -7,40 +7,33 @@ body {
     padding: 0;
 }
 
-/* Style pour le menu d'icônes en haut de la page */
-.icon-menu {
+/* Style pour le rectangle fixe en haut de l'écran */
+.icon-bar {
     position: fixed;
-    top: 0;
-    width: 100%;
+    top: 20px; /* Décalage du haut de l'écran */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(200, 200, 200, 0.6); /* Couleur gris transparent */
+    padding: 10px 20px;
+    border-radius: 20px; /* Angles arrondis */
     display: flex;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 10px 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    gap: 15px; /* Espace entre les icônes */
     z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Style des liens d'icônes */
-.icon-link {
-    margin: 0 15px;
+.icon-link img {
+    width: 20px; /* Taille réduite des icônes */
+    height: 20px;
+    filter: grayscale(100%);
+    opacity: 0.8;
     transition: transform 0.3s, opacity 0.3s;
 }
 
-.icon-link img {
-    width: 24px;
-    height: 24px;
-    filter: grayscale(100%);
-    opacity: 0.7;
-    transition: filter 0.3s, opacity 0.3s;
-}
-
 /* Effet au survol */
-.icon-link:hover {
-    transform: scale(1.2);
-    opacity: 1;
-}
-
 .icon-link:hover img {
+    transform: scale(1.2); /* Agrandir légèrement au survol */
     filter: grayscale(0%);
     opacity: 1;
 }
