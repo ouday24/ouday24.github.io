@@ -7,20 +7,26 @@ body {
     padding: 0;
 }
 
-/* Style pour le rectangle fixe en haut de l'écran */
+/* Style pour cacher le rectangle au départ */
 .icon-bar {
     position: fixed;
-    top: 20px;
+    top: -100px; /* Placé en dehors de l'écran au départ */
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgba(200, 200, 200, 0.8); /* Couleur gris transparent */
+    background-color: rgba(200, 200, 200, 0.8);
     padding: 10px 20px;
-    width: max-content; /* Ajuste la taille du rectangle autour des icônes */
-    border-radius: 20px; /* Angles arrondis */
+    width: max-content;
+    border-radius: 20px;
     display: flex;
-    gap: 15px; /* Espace entre les icônes */
-    z-index: 1000; /* Garder la barre en avant-plan */
+    gap: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: top 0.5s ease; /* Transition de descente */
+    z-index: 1000;
+}
+
+/* Classe pour afficher le rectangle */
+.icon-bar.visible {
+    top: 20px; /* Position visible du rectangle */
 }
 
 /* Style des liens d'icônes */
