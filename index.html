@@ -105,5 +105,19 @@
         });
     });
 </script>
+
+<script>
+    document.addEventListener('mousemove', function(event) {
+        const iconBar = document.querySelector('.icon-bar');
+        
+        // Si la souris est dans les 50 pixels du haut de l'écran, affiche le rectangle
+        if (event.clientY < 50) {
+            iconBar.classList.add('visible');
+        } else {
+            iconBar.classList.remove('visible');
+        }
+    });
+</script>
+
 </body>
 </html>
